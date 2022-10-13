@@ -9,7 +9,7 @@ public class DepositCalculator {
     double calculateSimplePercent(double depositSum, double yearRate, int depositPeriod) {
         return round(depositSum + depositSum * yearRate * depositPeriod, 2);
     }
-
+//возможно стоило бы назвать getRound или как-то похоже, в остальном все отлично!
     double round(double value, int precision) {
         double scale = Math.pow(10, precision);
         return Math.round(value * scale) / scale;
